@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+        <RelativeLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/mb_continue"
+                android:layout_below="@+id/header"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:text="csddsdsd"
+                        android:textAlignment="center"
+                        android:textSize="14sp" />
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:text="ddfdfdf"
+                        android:textSize="14sp" />
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:text="sdsdsds"
+                        android:textSize="14sp" />
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginBottom="48dp"
+                        android:text="sddsdsd"
+                        android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <Button
+                android:id="@+id/mb_continue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:text="sdsdsdsd" />
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

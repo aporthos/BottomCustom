@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/ll_purchase_content"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_go"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/tv_go_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView40"
+                app:layout_constraintEnd_toStartOf="@+id/textView58"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="$ 10, 000" />
+
+        <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="adfadf"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+                android:id="@+id/textView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="adsadsfasdf"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+        <TextView
+                android:id="@+id/tv_go_iva_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView63"
+                app:layout_constraintTop_toBottomOf="@+id/tv_go_total"
+                tools:text="$ 10, 000" />
+
+        <TextView
+                android:id="@+id/textView58"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="adadfad"
+                app:layout_constraintBottom_toTopOf="@+id/textView40"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+                android:id="@+id/textView63"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="asdfasdfasffdsa"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView58" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+            android:id="@+id/divider_return"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_return"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="sddafasdfdasf"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+                android:id="@+id/textView44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="sdsfasd"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+        <TextView
+                android:id="@+id/tv_return_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView44"
+                app:layout_constraintEnd_toStartOf="@+id/textView64"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="$ 10, 000" />
+
+        <TextView
+                android:id="@+id/tv_iva_return_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView67"
+                app:layout_constraintTop_toBottomOf="@+id/tv_return_total"
+                tools:text="$ 10, 000" />
+
+        <TextView
+                android:id="@+id/textView64"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="sadfadfa"
+                app:layout_constraintBottom_toTopOf="@+id/textView44"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+                android:id="@+id/textView67"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="asdfadsfadf"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView64" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+            android:id="@+id/divider7"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_subtotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/textView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="adfasdfasdf"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+                android:id="@+id/tv_subtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView68"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="$ 10, 000" />
+
+        <TextView
+                android:id="@+id/textView68"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="asdfadsf"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+            android:id="@+id/divider_aditional"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_additional_services"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/tv_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="adfadfasd" />
+
+        <TextView
+                android:id="@+id/tv_service_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView69"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="$ 10, 000" />
+
+        <TextView
+                android:id="@+id/textView69"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="asfasdadsf"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+        <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="asdasdfasdf"
+                android:textColor="@color/dullRed"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+                android:id="@+id/tv_coupon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView71"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="$ 10, 000" />
+
+        <TextView
+                android:id="@+id/textView71"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="adasdfasdf"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

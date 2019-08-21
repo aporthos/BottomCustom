@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+             tools:context=".tab.OneFragment">
+
+    <com.portes.customtab.tab.NonSwipeableViewPager
+            android:id="@+id/vp_purchase_detail_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="true">
+
+        <com.google.android.material.tabs.TabLayout
+                android:id="@+id/app_tl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </com.portes.customtab.tab.NonSwipeableViewPager>
+
+</LinearLayout>

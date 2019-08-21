@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <com.portes.customtab.tab.NonSwipeableViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+        <com.portes.customtab.tab.HelperTabLayout
+                android:id="@+id/tl_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:tabTextAppearance="@style/CustomTextAppearanceTab"
+                app:tabTextColor="@color/dullRed"
+                app:tabIndicatorHeight="0dp"/>
+
+    </com.portes.customtab.tab.NonSwipeableViewPager>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tv_nombre_pasajero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:hint="el nombre alv">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_nombre_pasajero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits=" ABCDEFGHIJKLMNÑOPQRSTUVWXYZÁÉÍÓÚ"
+                android:inputType="textPersonName|textCapCharacters"
+                android:maxLength="30"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:hint="el OTRO alv">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName|textCapCharacters"
+                android:maxLength="30"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

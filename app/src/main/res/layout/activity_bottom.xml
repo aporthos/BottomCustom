@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".BottomActivity">
+    <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+        <include layout="@layout/lyt_app_timer"/>
+
+    </RelativeLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lin_content_button"
+            android:layout_below="@+id/header"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <include layout="@layout/lyt_app_purchase_detail" />
+
+        <include layout="@layout/lyt_purchase_bottomsheet" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>
